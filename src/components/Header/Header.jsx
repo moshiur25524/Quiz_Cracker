@@ -6,7 +6,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className="bg-gray-800">
-            <nav className=" mx-auto px-6 py-3 flex items-center justify-between">
+            <nav className=" px-6 py-3 flex items-center justify-between">
                 <NavLink className="text-white font-bold text-2xl lg:text-4xl" to="/">
                     Quiz Cracker
                 </NavLink>
