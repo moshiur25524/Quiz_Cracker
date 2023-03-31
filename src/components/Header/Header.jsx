@@ -36,6 +36,14 @@ const Header = () => {
                                 <li>
                                     <NavLink
                                         className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                                        to="/statistics"
+                                    >
+                                        Statistics
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                                         to="/about"
                                     >
                                         About

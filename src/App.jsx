@@ -7,6 +7,7 @@ import Blog from './components/Blog/Blog'
 import About from './components/About/About'
 import NotFound from './components/NotFound/NotFound'
 import QuizDetails from './components/QuizDetails/QuizDetails'
+import Statistics from './components/Statistics/Statistics'
 
 function App() {
 
@@ -32,6 +33,10 @@ function App() {
         {
           path: 'about',
           element: <About/>
+        },
+        {
+          path: 'statistics',
+          element: <Statistics/>
         },
         { path: '*', element: <NotFound/>}
       ]
