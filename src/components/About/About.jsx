@@ -1,4 +1,6 @@
 import React from 'react';
+import elon from '../../assets/elon-musk-rt-gmh-230207_1675807984906_hpMain_4x5_992.jpg'
+import steve from '../../assets/steve.jpg'
 
 const About = () => {
     return (
@@ -15,13 +17,13 @@ const About = () => {
                 <h2 className="text-2xl font-semibold text-gray-700 mb-4">Meet the Team</h2>
                 <div className="grid grid-cols-2 gap-8">
                     <div className="bg-white rounded-lg shadow-md p-8">
-                        <img src="https://via.placeholder.com/150" alt="Team Member" className="rounded-full w-32 h-32 mb-4 mx-auto" />
-                        <h3 className="text-lg font-semibold text-gray-700 mb-2">John Doe</h3>
+                        <img src={elon} alt="Team Member" className="rounded-full w-32 h-32 mb-4 mx-auto" />
+                        <h3 className="text-lg font-semibold text-gray-700 mb-2">Elon Musk</h3>
                         <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod faucibus mi a consectetur. </p>
                     </div>
                     <div className="bg-white rounded-lg shadow-md p-8">
-                        <img src="https://via.placeholder.com/150" alt="Team Member" className="rounded-full w-32 h-32 mb-4 mx-auto" />
-                        <h3 className="text-lg font-semibold text-gray-700 mb-2">Jane Smith</h3>
+                        <img src={steve} alt="Team Member" className="rounded-full w-32 h-32 mb-4 mx-auto" />
+                        <h3 className="text-lg font-semibold text-gray-700 mb-2">Steve</h3>
                         <p className="text-gray-700">Suspendisse potenti. Vestibulum bibendum laoreet ex, quis iaculis enim pellentesque a. </p>
                     </div>
                 </div>
