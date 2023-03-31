@@ -9,7 +9,7 @@ const Quiz = ({ quiz }) => {
                 <img className="w-full h-48 object-cover" src={logo} alt={name} />
                 <div className="px-4 py-2">
                     <h3 className="text-lg font-medium text-gray-800">{name}</h3>
-                    <Link to='/' className="mt-2 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-all">
+                    <Link to={`/api/quiz/${id}`} className="mt-2 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-all">
                         Start Practice
                     </Link>
                 </div>

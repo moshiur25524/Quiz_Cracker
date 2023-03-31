@@ -6,6 +6,7 @@ import Main from './components/Layout/Main'
 import Blog from './components/Blog/Blog'
 import About from './components/About/About'
 import NotFound from './components/NotFound/NotFound'
+import QuizDetails from './components/QuizDetails/QuizDetails'
 
 function App() {
 
@@ -18,6 +19,11 @@ function App() {
           path: '/',
           loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home />
+        },
+        {
+          path: '/api/quiz/:id',
+          loader: async ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
+          element: <QuizDetails />
         },
         {
           path: 'blog',
