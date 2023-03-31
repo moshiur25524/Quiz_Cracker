@@ -23,22 +23,23 @@ function App() {
         },
         {
           path: '/api/quiz/:id',
-          loader: async ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
+          loader: async ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
           element: <QuizDetails />
         },
         {
           path: 'blog',
-          element: <Blog/>
+          element: <Blog />
         },
         {
           path: 'about',
-          element: <About/>
+          element: <About />
         },
         {
           path: 'statistics',
-          element: <Statistics/>
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz/'),
+          element: <Statistics />
         },
-        { path: '*', element: <NotFound/>}
+        { path: '*', element: <NotFound /> }
       ]
     }
   ])
