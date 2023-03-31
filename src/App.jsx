@@ -8,6 +8,7 @@ import About from './components/About/About'
 import NotFound from './components/NotFound/NotFound'
 import QuizDetails from './components/QuizDetails/QuizDetails'
 import Statistics from './components/Statistics/Statistics'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
@@ -33,6 +34,10 @@ function App() {
         {
           path: 'about',
           element: <About />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
         },
         {
           path: 'statistics',
